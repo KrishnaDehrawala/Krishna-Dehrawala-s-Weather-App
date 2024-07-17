@@ -25,6 +25,9 @@ function Weather(props) {
                         condition={weather.current.condition.text}
                         sky={weather.current.condition.icon}
                         precip_mm={weather.current.precip_mm}
+                        name={weather.location.name}
+                        region={weather.location.region}
+                        country={weather.location.country}
                     />
 
                 </div>

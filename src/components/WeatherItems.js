@@ -3,10 +3,10 @@ import React from 'react'
 function WeatherItems(props) {
     return (
         <div className="imgCon">
-            <div className="card text-bg-dark">
-                <img height={500} width={500} src="https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/iStock-477110708%20(1).jpg?itok=wCLnw6I9" className="card-img" alt="..." />
-                <div className="card-img-overlay">
-                    <h5 className="card-title mb-3">Weather</h5>
+            <div className="card text-bg-dark" style={{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
+                <img style={{height:"29rem",objectFit:"cover"}} src="https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg" className="card-img" alt="..." />
+                <div className="card-img-overlay" style={{color:"black"}}>
+                    <h4 className="card-title mb-3">Weather</h4>
                     <p className="card-text">{`${props.tempC}`}<sup><span style={{ fontSize: "x-small" }}>o</span></sup>C / {`${props.tempF}`}<sup><span style={{ fontSize: "x-small" }}>o</span></sup>F</p>
                     <p className="card-text">Last updated on {`${props.lastUpdated}`}</p>
                     <p className="list-group-item">Humidity: {props.humidity}</p>
@@ -14,6 +14,9 @@ function WeatherItems(props) {
                         <img height={35} width={35} src={props.sky} alt="" />
                     </p>
                     <p className="list-group-item">Precipitation: {props.precip_mm} mm</p>
+                    <p className="list-group-item">Name: {props.name}</p>
+                    <p className="list-group-item">Region: {props.region}</p>
+                    <p className="list-group-item">Country: {props.country}</p>
                 </div>
             </div>
         </div>
