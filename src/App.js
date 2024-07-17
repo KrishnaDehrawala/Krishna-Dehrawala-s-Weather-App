@@ -10,7 +10,7 @@ function App() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Krishna's Weather</a>
+          <a className="navbar-brand" href="/">Krishna's Weather</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +27,7 @@ function App() {
             setRegion(inputRegion.value)
           }}>
             <input className="form-control me-2 inputRegion" type="search" placeholder="Search" aria-label="Search" onChange={(evt) => { setSearch(evt.target.value) }} />
-            <button className="btn btn-outline-success" type="submit" disabled={search == ""}>Search</button>
+            <button className="btn btn-outline-success" type="submit" disabled={search === ""}>Search</button>
           </form>
         </div>
       </nav>
