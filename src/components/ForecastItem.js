@@ -3,7 +3,7 @@ import React from 'react'
 function ForecastItem(props) {
     return (
         <div className="card bg-dark text-white col-md-4 mx-1 my-1" style={{ width: "27rem", padding: "0px" }}>
-            <img src="https://wallpapers.com/images/featured/black-clouds-background-87utstxo0bgqdgh8.jpg" className="card-img" alt="..." />
+            <img style={{ height: "20rem" }} src="https://wallpapers.com/images/featured/black-clouds-background-87utstxo0bgqdgh8.jpg" className="card-img" alt="..." />
             <div className="card-img-overlay">
                 <h5 className="card-title">Date: {props.date}</h5>
                 <p className="card-text">Average Temperature: {props.avgtemp_c}<sup>o</sup>C / {props.avgtemp_f}<sup>o</sup>F</p>

@@ -17,7 +17,7 @@ function ForecastContainer(props) {
         <div className="container">
             <div className="row justify-content-center">
                 {forecast10 && (forecast10.forecast.forecastday).map((element) => {
-                    return <ForecastItem
+                    return <ForecastItem key={element.date}
                         date={element.date}
                         avgtemp_c={element.day.avgtemp_c}
                         avgtemp_f={element.day.avgtemp_f}
